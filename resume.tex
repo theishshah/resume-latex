@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+    
+    \title{ish-shah-resume}
+    
+    \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+    
+    \usepackage{enumitem}
+    \usepackage{multicol}
+    \usepackage{hyperref}
+    \usepackage[T1]{fontenc}
+    
+    \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+    \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+    
+    \name{Ish Shah}
+    
+    \nameskip\break
+    \address{(303)~802~7919 \\ 
+    \href{mailto:ish@ishshah.me}{ish@ishshah.me} \\ 
+    \href{http://github.com/theishshah}{GitHub: theishshah} \\ 
+    \href{http://linkedin.com/in/theishshah}{LinkedIn: theishshah}}
+    
+    \begin{document}
+    
+    \begin{rSection}{Experience}
+    
+    \begin{rSubsection}{Ampaire}{September 2018 - December 2018}{Software Engineering Intern}{Los Angeles, CA}
+    \item Embedded systems engineering intern for aircraft Powertrain, Test \& Cert, and Integration groups
+    \item Affected components include powertrain control unit, battery management system, and motor controller
+    \item Improving internal infrastructure and tooling for data management
+    \end{rSubsection}
+    
+    \begin{rSubsection}{Red Hat}{May 2018 - September 2018}{Software Engineering Intern}{San Francisco, CA}
+    \item Built Kubernetes operator for the CoreOS \verb+dex+ OpenID Connect provider
+    \item Refactored code generation package to be more modular, increasing developer productivity 
+    \item Implemented TravisCI pipeline to build and deploy operators
+    \item Added support in the \verb+operator-sdk+ for higher configurability and better debugging of operators
+    \end{rSubsection}
+    
+    \begin{rSubsection}{Ocient}{January 2018 - May 2018}{Software Engineering Intern}{Chicago, IL}
+    \item Implemented system to mock high performance data center hardware
+    \item Used Intel \verb+spdk+ to determine NVME drive queue depths and efficiently queue jobs 
+    \item Built an integration testing pipeline for complex database operators    
+    \end{rSubsection}
+    
+    \begin{rSubsection}{Bazaarvoice}{May 2017 - August 2017}{Software Engineering Intern}{Austin, TX}
+    \item Worked on service gateway and authentication team
+    \item Designed and implemented user activity logging service using Dropwizard
+    \item Deployed Elasticsearch instance to store and query text records
+    \end{rSubsection}
+    
+    \begin{rSubsection}{Coordinated Science Laboratory}{February 2017 - December 2017}{Undergraduate Researcher, Robotics}{Urbana, IL}
+    \item Member of Intelligent Robotics Laboratory in the UAV Autopilot group
+    \item Used PX4 to run custom navigation algorithms on drones
+    \item Assembled and debugged low power embedded hardware
+    \item Worked on implementing various parallel computation strategies
+    \end{rSubsection}
+    
+    \end{rSection}
+    
+    \begin{rSection}{Education}
+    
+    \begin{rSubsection}{University of Illinois}{August 2016 - December 2017}{Computer Science}{Urbana-Champaign, IL}
+    \item Chair of the GNU/Linux User Group. Taught students Linux fundamentals and OS tools
+    \item Organizer for Hacker Experience at HackIllinois and for Speaker Content at Reflections|Projections
+    \item Course Staff for CS196. Gave lectures on introductory computer science material
+    \end{rSubsection}
+    
+    \end{rSection}
+    
+    \begin{rSection}{Proficiencies}
+    
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+    Programming Languages &  Golang, Python, C/C++, Java, Ruby, Bash \\
+    Developer Technologies & Docker, Kubernetes, Git, Elasticsearch, PostgreSQL, Flask, \LaTeX \\
+    \end{tabular}
+    
+    \end{rSection}
+    
+    %\begin{rSection}{Relevant Courses}
+    %\itab{\textbf{Core Courses}} \tab{}  \tab{\textbf{Other Courses}}
+    %\\ \itab{Fluid Mechanics \& its applications } \tab{}  %\tab{Computational Methods in Engineering}
+    %\\ \itab{Thermodynamics} \tab{}  \tab{Fundamental of Computing} 
+    %\\ \itab{Heat Transfer \& its applications} \tab{}  \tab{Probability and Statistics} 
+    %\\ \itab{Mass Transfer \& its applications} \tab{} \tab{Calculus \& Linear Algebra}
+    %\\ \itab{Transport Phenomena (ongoing)} \tab{} \tab{Introduction to Mechanics}
+    %\end{rSection}
+    
+    \end{document}
+    
